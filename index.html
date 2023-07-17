@@ -13,15 +13,18 @@
 <body>
 
     <div class="input-container">
-        <input class="start-weight-input" type="text" placeholder="Start Weight">
-        <input class="goal-weight-input" type="text" placeholder="Goal Weight">
-        <input class="calorie-intake-input" type="text" placeholder="Cals Intake">
-        <input class="calories-burned-input" type="text" placeholder="Cals Burned">
+
+        <input id="start-weight-input" class="start-weight-input" type="text" placeholder="Start Weight">
+        <input id="goal-weight-input" class="goal-weight-input" type="text" placeholder="Goal Weight">
+        <input id="calorie-input" class="calorie-intake-input" type="text" placeholder="Cals Intake">
+        <input id="calorie-burned-input" class="calories-burned-input" type="text" placeholder="Cals Burned">
+
         <button class="confirm-button">GO</button>
+
         <div class="kgorlbs">
             <div class="text">lbs</div>
             <label class="switch">
-                <input class="check-box" type="checkbox">
+                <input id="kgorlb-checkbox" class="check-box" type="checkbox">
                 <span class="slider round"></span>
             </label>
             <div class="text">kg</div>
@@ -35,7 +38,7 @@
 
             <div class="start-date-container">
                 <div class="info-text">Current Weight</div>
-                <div id="start-weight" class="current-weight-text">226.5 lbs</div>
+                <div id="start-weight" class="current-weight-text">~</div>
             </div>
 
             <div class="base-info-container">
@@ -43,34 +46,35 @@
                 <div class="box-container">
                     <i class="fa-solid fa-utensils"></i>
                     <div class="box-info-container">
-                        <div class="box-header-text">Daily Calories Consumed</div>
-                        <div id="cals-consumed-daily" class="loss-per-day text">1,500 cals</div>
+                        <div class="box-header-text">Daily Calories Consumed:</div>
+                        <div id="cals-consumed-daily" class="loss-per-day text"></div>
                     </div>
                 </div>
 
                 <div class="box-container">
                     <i class="fa-solid fa-fire-flame-curved"></i>
                     <div class="box-info-container">
-                        <div class="box-header-text">Daily Calories Burned</div>
-                        <div id="cals-burned-daily" class="calories-burned-per-day text">3,400 cals </div>
+                        <div class="box-header-text">Daily Calories Burned:</div>
+                        <div id="cals-burned-daily" class="calories-burned-per-day text"></div>
                     </div>
                 </div>
 
                 <div class="box-container">
                     <i class="fa-solid fa-fire-flame-curved"></i>
                     <div class="box-info-container">
-                        <div class="box-header-text">Daily Calorie Deficit</div>
-                        <div id="cals-deficit-daily" class="calorie-deficit-per-day text">1,200 cals</div>
+                        <div class="box-header-text">Daily Calorie Deficit:</div>
+                        <div id="cals-deficit-daily" class="calorie-deficit-per-day text"></div>
                     </div>
                 </div>
 
                 <div class="box-container">
                     <i class="fa-solid fa-weight-scale"></i>
                     <div class="box-info-container">
-                        <div class="box-header-text">Daily Weight loss</div>
-                        <div id="weight-lost-daily" class="weight-lost-per-day text">1.2 lbs</div>
+                        <div class="box-header-text">Daily Weight loss:</div>
+                        <div id="weight-lost-daily" class="weight-lost-per-day text"></div>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -79,7 +83,7 @@
 
             <div class="end-date-container">
                 <div class="info-text">Goal Weight</div>
-                <div id="end-weight" class="end-weight-text">199 lbs</div>
+                <div id="end-weight" class="end-weight-text">~</div>
             </div>
 
             <div class="month-info-container">
@@ -88,40 +92,40 @@
                 <div class="box-container">
                     <i class="fa-solid fa-utensils"></i>
                     <div class="box-info-container">
-                        <div class="box-header-text">Total Calories Consumed</div>
-                        <div id="cals-consumed-goal" class="total-calories-consumed text">1,234,000 cals</div>
+                        <div class="box-header-text">Total Calories Consumed:</div>
+                        <div id="cals-consumed-goal" class="total-calories-consumed text"></div>
                     </div>
                 </div>
 
                 <div class="box-container">
                     <i class="fa-solid fa-fire-flame-curved"></i>
                     <div class="box-info-container">
-                        <div class="box-header-text">Total Calories Burned</div>
-                        <div id="cals-burned-goal" class="total-calories-burned text">1.2 lbs</div>
+                        <div class="box-header-text">Total Calories Burned:</div>
+                        <div id="cals-burned-goal" class="total-calories-burned text"></div>
                     </div>
                 </div>
 
                 <div class="box-container">
                     <i class="fa-solid fa-fire-flame-curved"></i>
                     <div class="box-info-container">
-                        <div class="box-header-text">Total Calorie Deficit</div>
-                        <div id="cals-deficit-goal" class="loss-per-day text">1.2 lbs</div>
+                        <div class="box-header-text">Total Calorie Deficit:</div>
+                        <div id="cals-deficit-goal" class="loss-per-day text"></div>
                     </div>
                 </div>
 
                 <div class="box-container">
                     <i class="fa-solid fa-weight-scale"></i>
                     <div class="box-info-container">
-                        <div class="box-header-text">Total Weight lost</div>
-                        <div id="weight-lost-goal" class="total-weight-lost text">1.2 lbs</div>
+                        <div class="box-header-text">Total Weight lost:</div>
+                        <div id="weight-lost-goal" class="total-weight-lost text"></div>
                     </div>
                 </div>
 
                 <div class="box-container">
                     <i class="fa-solid fa-calendar-days"></i>
                     <div class="box-info-container">
-                        <div class="box-header-text">Days to complete</div>
-                        <div id="days-to-lose-weight" class="days-taken text">32</div>
+                        <div class="box-header-text">Days to reach goal:</div>
+                        <div id="days-to-lose-weight" class="days-taken text"></div>
                     </div>
                 </div>
 

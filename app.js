@@ -33,11 +33,11 @@ function DailyWeight(startWeight, calorieIntake, calorieBurned, poundsOrkg) {
 
     if (poundsOrkg == false) {
         start_weight.innerHTML = startWeight + " lbs";
-        let weight_loss_calculation = (calorieBurned - calorieIntake) / 3500;
-        daily_weight_loss.innerHTML = weight_loss_calculation.toFixed(2) + " lbs";
+        const weightLossCalculation = (calorieBurned - calorieIntake) / 3500;
+        daily_weight_loss.innerHTML = weightLossCalculation.toFixed(2) + " lbs";
     } else {
         start_weight.innerHTML = (startWeight / 2.205).toFixed(1) + " kg";
-        let weight_loss_calculation = (calorieBurned - calorieIntake) / 3500;
+        const weight_loss_calculation = (calorieBurned - calorieIntake) / 3500;
         daily_weight_loss.innerHTML = (weight_loss_calculation / 2.205).toFixed(1) + " kg";
     }
 
