@@ -9,7 +9,6 @@ window.addEventListener('load', () => {
         const calorieIntake = document.querySelector(".calorie-intake-input").value;
         const caloriesBurned = document.querySelector(".calories-burned-input").value;
         const poundsOrkg = document.querySelector(".check-box").checked;
-        console.log(poundsOrkg);
 
         DailyWeight(startWeight, calorieIntake, caloriesBurned, poundsOrkg);
         EndGoalWeight(startWeight, goalWeight, calorieIntake, caloriesBurned, poundsOrkg);
